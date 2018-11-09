@@ -1,4 +1,6 @@
 apply plugin: 'java-library'
+apply plugin: 'com.github.dcendents.android-maven'
+apply plugin: 'com.jfrog.bintray'
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
@@ -6,3 +8,30 @@ dependencies {
 
 sourceCompatibility = "7"
 targetCompatibility = "7"
+
+ext {
+    bintrayRepo = 'ViewModelFactory'
+    bintrayName = 'annotations'
+
+    publishedGroupId = 'com.radutopor.viewmodelfactory'
+    libraryName = 'ViewModelFactory'
+    artifact = 'annotations'
+
+    libraryDescription = 'Automatically generate factories for (Android Architecture Component\'s) ViewModels to enable assisted dependency injection'
+
+    siteUrl = 'https://github.com/radutopor/ViewModelFactory'
+    gitUrl = 'https://github.com/radutopor/ViewModelFactory.git'
+
+    libraryVersion = '1.0.0'
+
+    developerId = 'radutopor'
+    developerName = 'Radu Topor'
+    developerEmail = 'radu.ilie.topor@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
+
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nuuneoi/JCenter/master/bintrayv1.gradle'
