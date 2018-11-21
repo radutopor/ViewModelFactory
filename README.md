@@ -2,7 +2,7 @@
 #### Automatically generate factories for (Android Architecture Component's) ViewModels to enable easy assisted dependency injection
 
 This is an annotation processing library that generates a `ViewModelProvider.Factory`s for each `ViewModel` that allow easy and clean assisted dependency injection by any JSR-330-compatible library, like Dagger. 
-This means any `ViewModel` can take be both provided with **common dependencies** _and_ **variable parameters** in the same constructor.
+This means that any `ViewModel` can be provided with both **common dependencies** _and_ **variable parameters** in the same constructor.
 
 ```
 @ViewModelFactory
