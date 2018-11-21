@@ -54,5 +54,5 @@ kapt {
 }
     
 implementation "com.radutopor.viewmodelfactory:annotations:1.0.0"
-kapt "com.radutopor.viewmodelfactory:processor:1.0.0"       // use `annotationProcessor` for Java
+kapt "com.radutopor.viewmodelfactory:processor:1.0.0"   // use `annotationProcessor` for Java
 ```
