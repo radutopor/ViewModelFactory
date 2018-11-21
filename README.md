@@ -38,8 +38,8 @@ class SampleActivity : AppCompatActivity() {
 }
 ```
 
-- `@ViewModelFactory`: Annotate either the `ViewModel` class or the specific constructor to be used by the factory
-- `@Provided`: Annotate all constructor arguments that can be provided by the dependency graph of the dependency injection library
+- `@ViewModelFactory` - Annotate either the `ViewModel` class or the specific constructor to be used by the factory
+- `@Provided` - Annotate all constructor arguments that can be provided by the graph of the dependency injection library
 - The rest of the variable constructor arguments will be taken by the factory in the `create()` method
 - You can inject the generated factory in your `Activity` or `Fragment` and use it to effortlessly construct dependency-satisfied and parametrised `ViewModel`s
 
@@ -54,5 +54,5 @@ kapt {
 }
     
 implementation "com.radutopor.viewmodelfactory:annotations:1.0.0"
-kapt "com.radutopor.viewmodelfactory:processor:1.0.0"  // use `annotationProcessor` for Java
+kapt "com.radutopor.viewmodelfactory:processor:1.0.0"       // use `annotationProcessor` for Java
 ```
